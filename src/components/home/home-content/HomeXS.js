@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const HomeXS = () => {
     return (
@@ -28,13 +29,14 @@ const HomeXS = () => {
             <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'7rem'} mr={'7rem'} >
                 <Button sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF', mb: '1rem' }}  >
                     <Typography variant='p'>
-                        UX/UI Designs
+                        <Link to={'/designs'}>UX/UI Designs</Link>
                     </Typography>
                 </Button>
 
-                <Button sx={{ backgroundColor: '#50424F', color: '#FFFFFF' }}>
+                <Button sx={{ backgroundColor: '#50424F',  }}>
                     <Typography variant='p'>
-                        Full Stack Projects
+                        <Link className='home-buttons' to={'/full-stack-projects'}>Full Stack Projects</Link>
+                        
                     </Typography>
                 </Button>
             </Box>

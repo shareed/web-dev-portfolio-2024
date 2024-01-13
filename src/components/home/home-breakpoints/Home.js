@@ -12,7 +12,7 @@ const Home = () => {
       <>
           {isMatch
               ?
-              <HomeMobile />
+              <HomeMobile/>
               :
               <HomeDesktop/>
                 }
