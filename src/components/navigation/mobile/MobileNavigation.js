@@ -8,7 +8,7 @@ const MobileNavigation = ({ navLinks }) => {
   return (
 
     <>
-        <Drawer PaperProps={{sx:{backgroundColor: '#91d370'}}} open={open} onClose={() => setOpen(false)}>
+        <Drawer PaperProps={{sx:{backgroundColor: 'rgb(179, 10, 179)'}}} open={open} onClose={() => setOpen(false)}>
           <MobileNavigationList navLinks={navLinks} onSelectedClick={() => setOpen(false)} />
         </Drawer>
         <IconButton sx={{marginLeft: 'auto', color: 'rgb(179, 10, 179)'}}onClick={() => setOpen(!open)}>

@@ -9,8 +9,8 @@ const NavLogo = () => {
             <Typography >
                 <DeveloperModeIcon />
             </Typography>
-            <Typography variant='p'>
-                Material UI
+            <Typography variant='p' fontFamily={'"Lemon", serif'}>
+                Think Design Create Repeat
             </Typography>
         </Box>
     )
