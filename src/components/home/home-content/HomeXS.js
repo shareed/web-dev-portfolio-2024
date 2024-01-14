@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
+import '../styles/home.css'
 const HomeXS = () => {
     return (
         <Box sx={{ backgroundColor: 'black', height: '100vh', paddingTop: '10rem' }} >
@@ -27,18 +27,22 @@ const HomeXS = () => {
             </Box>
 
             <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'7rem'} mr={'7rem'} >
-                <Button sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF', mb: '1rem' }}  >
+            <NavLink  to={'/designs'}>
+                <Button id='designs-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%'  }}  >
                     <Typography variant='p'>
-                        <Link to={'/designs'}>UX/UI Designs</Link>
+                        UX/UI Designs
                     </Typography>
                 </Button>
+                </NavLink>
 
-                <Button sx={{ backgroundColor: '#50424F',  }}>
+                <NavLink  to={'/full-stack-projects'}>
+                <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%'  }}>
                     <Typography variant='p'>
-                        <Link className='home-buttons' to={'/full-stack-projects'}>Full Stack Projects</Link>
+                        Full Stack Projects
                         
                     </Typography>
                 </Button>
+                </NavLink>
             </Box>
         </Box >
     )

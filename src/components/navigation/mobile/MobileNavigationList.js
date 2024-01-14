@@ -8,7 +8,7 @@ const MobileNavigationList = ({ navLinks, onSelectedClick}) => {
                 <ListItemButton key={index} divider onClick={onSelectedClick}>
                     <ListItemIcon>
                         <ListItemText sx={{ color: 'white' }}>
-                            <NavLink to={link.path}>
+                            <NavLink id='mobile-nav-link' to={link.path}>
                                 {link.name}
                             </NavLink>
 

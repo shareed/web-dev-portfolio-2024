@@ -1,6 +1,8 @@
 a {
     text-decoration: none;
+    
 }
-a .home-buttons{
+
+#mobile-nav-link, #designs-home-button, #projects-home-button{
     color: #FFFFFF;
 }
