@@ -1,5 +1,9 @@
 import { useTheme, useMediaQuery, Box } from "@mui/material";
 import FSPXS from './fullstackprojects-content/FSPXS';
+import FSPSM from './fullstackprojects-content/FSPSM';
+import FSPMD from './fullstackprojects-content/FSPMD';
+import FSPLG from './fullstackprojects-content/FSPLG';
+import FSPXL from './fullstackprojects-content/FSPXL';
 
 const FullStackProjects = () => {
     const theme = useTheme();
@@ -8,21 +12,21 @@ const FullStackProjects = () => {
     const isSMMatch = useMediaQuery(theme.breakpoints.only('sm'));
     const isMDMatch = useMediaQuery(theme.breakpoints.only('md'));
     const isLGMatch = useMediaQuery(theme.breakpoints.only('lg'));
-   
+
 
     return (
         <>
             <Box >
-            {isXSMatch ? <FSPXS />
-                : isSMMatch ? <h1>SM</h1>
-                    : isMDMatch ? <h1>MD</h1>
-                        : isLGMatch ? <h1>LG</h1>
-                            : <h1>XL</h1>
-                                
+                {isXSMatch ? <FSPXS />
+                    : isSMMatch ? <FSPSM />
+                        : isMDMatch ? <FSPMD />
+                            : isLGMatch ? <FSPLG />
+                                : <FSPXL />
+
                 }
-                </Box>
-            </>
-  )
+            </Box>
+        </>
+    )
 }
 
 export default FullStackProjects;

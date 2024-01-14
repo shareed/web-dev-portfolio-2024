@@ -1,5 +1,9 @@
 import { useTheme, useMediaQuery, Box } from "@mui/material";
-import DesignsXS from "./designs-content/DesignsXS";
+import HomeXS from "./home-content/HomeXS";
+import HomeSM from "./home-content/HomeSM";
+import HomeMD from "./home-content/HomeMD";
+import HomeLG from "./home-content/HomeLG";
+import HomeXL from "./home-content/HomeXL";
 
 const Desgins = () => {
     const theme = useTheme();
@@ -13,11 +17,11 @@ const Desgins = () => {
     return (
         <>
             <Box >
-            {isXSMatch ? <DesignsXS />
-                : isSMMatch ? <h1>SM</h1>
-                    : isMDMatch ? <h1>MD</h1>
-                        : isLGMatch ? <h1>LG</h1>
-                            : <h1>XL</h1>
+            {isXSMatch ? <HomeXS />
+                : isSMMatch ? <HomeSM />
+                    : isMDMatch ? <HomeMD />
+                        : isLGMatch ? <HomeLG />
+                            : <HomeXL />
                                 
                 }
                 </Box>

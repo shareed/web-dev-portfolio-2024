@@ -18,15 +18,33 @@
 
 
 ## Components  ➡ 
-- `Home`
-    - `HomeMobile`: contains compoenents for xs and sm breakpoints for 0 to 899 screens
-        - `HomeXS`: XS Breakpoint content
-        - `HomeSM`: SM Breakpoint content
-    - `HomeDesktop`: contains compoenents for md breakpoint for 900 to 1199 screens
-        - `HomeMD`: MD Breakpoint content
-        - `HomeDesktopLarge`: contains compoenents for md breakpoint 1200 and above screens
-            - `HomeLG`: LG Breakpoint content
-            - `HomeXL`: XL Breakpoint content
+- `Home`: contains breakpoints/media queries for xs, sm, md, lg, xl
+    - `HomeXS`: componet for xs breakpoint, screens 0 to 599
+    - `HomeSM`: componet for sm breakpoint, screens 600 to 899
+    - `HomeMD`: componet for md breakpoint, screens 900 to 1199
+    - `HomeLG`: componet for lg breakpoint, screens 1200 to 1535
+    - `HomeXL`: componet for xl breakpoint, screens 1536 and above
+
+- `Contact`: contains breakpoints/media queries for xs, sm, md, lg, xl
+    - `ContactXS`: componet for xs breakpoint, screens 0 to 599
+    - `ContactSM`: componet for sm breakpoint, screens 600 to 899
+    - `ContactMD`: componet for md breakpoint, screens 900 to 1199
+    - `ContactLG`: componet for lg breakpoint, screens 1200 to 1535
+    - `ContactXL`: componet for xl breakpoint, screens 1536 and above
+
+- `Designs`: contains breakpoints/media queries for xs, sm, md, lg, xl
+    - `DesignsXS`: componet for xs breakpoint, screens 0 to 599
+    - `DesignsSM`: componet for sm breakpoint, screens 600 to 899
+    - `DesignsMD`: componet for md breakpoint, screens 900 to 1199
+    - `DesignsLG`: componet for lg breakpoint, screens 1200 to 1535
+    - `DesignsXL`: componet for xl breakpoint, screens 1536 and above
+
+- `FullStackProjects`: contains breakpoints/media queries for xs, sm, md, lg, xl
+    - `FSPXS`: componet for xs breakpoint, screens 0 to 599
+    - `FSPSM`: componet for sm breakpoint, screens 600 to 899
+    - `FSPMD`: componet for md breakpoint, screens 900 to 1199
+    - `FSPLG`: componet for lg breakpoint, screens 1200 to 1535
+    - `FSPXL`: componet for xl breakpoint, screens 1536 and above
 
 
 
