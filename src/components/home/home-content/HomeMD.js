@@ -2,8 +2,8 @@ import { Grid, Box, Button, Typography } from '@mui/material';
 
 const HomeMD = () => {
     return (
-        <Grid container sx={{ backgroundColor: 'black' }}>
-            <Grid item md={7} sx={{ backgroundColor: 'black', color: 'red', height: '100vh' }} mt={'8rem'} pt={'2rem'}>
+        <Grid container sx={{  }}>
+            <Grid item md={7} sx={{  color: 'red', height: '100vh' }} mt={'8rem'} pt={'2rem'}>
                 <Box sx={{}} mr={'1rem'} ml={'1rem'} >
                     <Typography variant='h3' color={'white'} textAlign={'center'} fontFamily={'"Lemon", serif'} >
                         Learn

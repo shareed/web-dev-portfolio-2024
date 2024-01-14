@@ -1,9 +1,8 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import '../styles/home.css'
 const HomeXS = () => {
     return (
-        <Box sx={{ backgroundColor: 'black', height: '100vh', paddingTop: '10rem' }} >
+        <Box sx={{ height: '100vh', paddingTop: '10rem' }} >
             <Grid container   >
                 <Grid item sx={12} m={'auto'} width={'57%'}>
                         <Typography variant='h4' color={'white'} textAlign={'center'} fontFamily={'"Lemon", serif'} >

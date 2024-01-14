@@ -2,7 +2,7 @@ import { Box, Typography, Button } from '@mui/material';
 
 const HomeSM = () => {
   return (
-    <Box sx={{ backgroundColor: 'black', height: '100vh' }} mt={'3rem'} pt={'2rem'} >
+    <Box sx={{ height: '100vh' }} mt={'3rem'} pt={'2rem'} >
       <Box sx={{}} mr={'1rem'} ml={'1rem'} >
         <Typography variant='h4' color={'white'} textAlign={'center'} fontFamily={'"Lemon", serif'} >
           Learn
