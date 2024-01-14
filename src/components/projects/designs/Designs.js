@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
-import { designs } from '../../data';
+import { designs } from '../../data/designData';
 
 const Designs = () => {
   return (
@@ -32,24 +32,6 @@ const Designs = () => {
         )
       })}
         </Grid>
-      {/* <Grid container paddingTop={'5rem'} sx={{ backgroundColor: 'yellow', display: 'flex', justifyContent: 'space-between' }} >
-        <Grid item sx={6} backgroundColor='orange' width={'50%'} >
-          <Box>
-            <Typography variant='p' color='#FFFFFF' >
-              Desgins Content
-            </Typography>
-          </Box>
-        </Grid>
-
-        <Grid item sx={6} backgroundColor='green' width={'50%'}>
-          <Box>
-            <Typography variant='p' color='#FFFFFF' >
-              Desgins Image
-            </Typography>
-          </Box>
-        </Grid>
-
-      </Grid> */}
     </Box>
   )
 }
