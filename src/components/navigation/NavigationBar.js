@@ -8,7 +8,7 @@ const NavigationBar = ({ navLinks }) => {
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <>
-            <AppBar sx={{ backgroundColor: 'black', borderBottom: '.1rem solid rgb(179, 10, 179)' }}>
+            <AppBar sx={{ backgroundColor: '#B7A6B5', borderBottom: '.1rem solid rgb(179, 10, 179)' }}>
                 <Toolbar>
                     {isMatch
                         ? <>

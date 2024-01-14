@@ -5,9 +5,10 @@ import DesktopNavigationTabs from './DesktopNavigationTabs';
 const DesktopNavigation = ({navLinks}) => {
     return (
         <Grid sx={{ placeItems: 'center' }} container>
-            {/* <Grid item xs={6}>
+            <Grid item xs={1}>
                 <NavLogo />
-            </Grid>  */}
+            </Grid> 
+            <Grid item xs={1}/>
             <DesktopNavigationTabs navLinks={navLinks} />
             
         </Grid>

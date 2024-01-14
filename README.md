@@ -20,58 +20,54 @@
 ## Components  ➡ 
 - `NavigationBar`: contains breakpoint for mobile and desktop navigation
     - `NavLogo`: contains the logo 
-    - `MobileNavigation`: Navigation for xs, and sm breakpoints 0 to 899 screen
-    - `DesktopNavigation`:
+    - `MobileNavigation`: Navigation for xs, and sm breakpoints 0 to 899 screens sizes
+    - `DesktopNavigation`:Navigation for md, lg and xl breakpoints 900 and above screens sizes
 - `Home`: contains breakpoints/media queries for xs, sm, md, lg, xl
-    - `HomeXS`: componet for xs breakpoint, screens 0 to 599
-    - `HomeSM`: componet for sm breakpoint, screens 600 to 899
-    - `HomeMD`: componet for md breakpoint, screens 900 to 1199
-    - `HomeLG`: componet for lg breakpoint, screens 1200 to 1535
-    - `HomeXL`: componet for xl breakpoint, screens 1536 and above
+    - `HomeXS`: componet for xs breakpoint, screens sizes 0 to 599
+    - `HomeSM`: componet for sm breakpoint, screens sizes 600 to 899
+    - `HomeMD`: componet for md breakpoint, screens sizes 900 to 1199
+    - `HomeLG`: componet for lg breakpoint, screens sizes 1200 to 1535
+    - `HomeXL`: componet for xl breakpoint, screens sizes 1536 and above
 
 - `Contact`: contains breakpoints/media queries for xs, sm, md, lg, xl
-    - `ContactXS`: componet for xs breakpoint, screens 0 to 599
-    - `ContactSM`: componet for sm breakpoint, screens 600 to 899
-    - `ContactMD`: componet for md breakpoint, screens 900 to 1199
-    - `ContactLG`: componet for lg breakpoint, screens 1200 to 1535
-    - `ContactXL`: componet for xl breakpoint, screens 1536 and above
+    - `ContactXS`: componet for xs breakpoint, screens sizes 0 to 599
+    - `ContactSM`: componet for sm breakpoint, screen sizes sizes 900 to 1199
+    - `ContactLG`: componet for lg breakpoint, screens sizes 1200 to 1535
+    - `ContactXL`: componet for xl breakpoint, screens sizes 1536 and above
 
 - `Designs`: contains breakpoints/media queries for xs, sm, md, lg, xl
-    - `DesignsXS`: componet for xs breakpoint, screens 0 to 599
-    - `DesignsSM`: componet for sm breakpoint, screens 600 to 899
-    - `DesignsMD`: componet for md breakpoint, screens 900 to 1199
-    - `DesignsLG`: componet for lg breakpoint, screens 1200 to 1535
-    - `DesignsXL`: componet for xl breakpoint, screens 1536 and above
+    - `DesignsXS`: componet for xs breakpoint, screens sizes 0 to 599
+    - `DesignsSM`: componet for sm breakpoint, screens sizes 600 to 899
+    - `DesignsMD`: componet for md breakpoint, screens sizes 900 to 1199
+    - `DesignsLG`: componet for lg breakpoint, screens sizes 1200 to 1535
+    - `DesignsXL`: componet for xl breakpoint, screens sizes 1536 and above
 
 - `FullStackProjects`: contains breakpoints/media queries for xs, sm, md, lg, xl
-    - `FSPXS`: componet for xs breakpoint, screens 0 to 599
-    - `FSPSM`: componet for sm breakpoint, screens 600 to 899
-    - `FSPMD`: componet for md breakpoint, screens 900 to 1199
-    - `FSPLG`: componet for lg breakpoint, screens 1200 to 1535
-    - `FSPXL`: componet for xl breakpoint, screens 1536 and above
+    - `FSPXS`: componet for xs breakpoint, screens sizes 0 to 599
+    - `FSPSM`: componet for sm breakpoint, screens sizes 600 to 899
+    - `FSPMD`: componet for md breakpoint, screens sizes 900 to 1199
+    - `FSPLG`: componet for lg breakpoint, screens sizes 1200 to 1535
+    - `FSPXL`: componet for xl breakpoint, screens sizes 1536 and above
 
 
 
 ## Color Schema
- <div class=' color one'>
-    <p class='text' >RGB: rgb(255, 255, 255) </p>
-    <p class='text' >Hex: #FFFFFF </p>
- </div> 
-
- <div class=' color two'>
-    <p class='text' >RGB: rgb(0, 0, 0) </p>
-    <p class='text' >Hex: #000000 </p>
- </div>             
-
-<div class=' color three'>
-    <p class='text' >RGB: rgb(77, 2, 77) </p>
-    <p class='text' >Hex: #4D024D </p>
- </div> 
- 
-<div class=' color four'>
-    <p class='text' >RGB: rgb(179, 10, 179) </p>
+<div class=' color one'>
+    <p class='text' >RGB: </p>
     <p class='text' >Hex: #B30AB3 </p>
  </div>
+ <div class=' color two'>
+    <p class='text' >RGB:    </p>
+    <p class='text' >Hex: #50424F </p>
+ </div> 
+
+ <div class=' color three'>
+    <p class='text' >RGB: </p>
+    <p class='text' >Hex: #B7A6B5 </p>
+ </div>             
+ 
+ 
+
 
 <style>
     .color {
@@ -82,22 +78,18 @@
     }
 
     .text {
-        color: grey
+        color: black
     }
 
     .one {
-        background-color: white;
+        background-color: #B30AB3;
     }
         
     .two {
-        background-color: black;
+        background-color: #50424F;
     }
 
     .three {
-        background-color: rgb(77, 2, 77);
-    }
-
-    .four {
-        background-color: rgb(179, 10, 179);
+        background-color: #B7A6B5;
     }
 </style>

@@ -20,6 +20,10 @@ const navLinks = [
     path: '/full-stack-projects'
   },
   {
+    name: 'Skills',
+    path: '/skills'
+  },
+  {
     name: 'Contact',
     path: '/contact'
   },
