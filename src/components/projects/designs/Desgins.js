@@ -1,7 +1,7 @@
 import { useTheme, useMediaQuery, Box } from "@mui/material";
-import FSPXS from './fullstackprojects-content/FSPXS';
+import DesignsXS from "./designs-content/DesignsXS";
 
-const FullStackProjects = () => {
+const DesginsMobile = () => {
     const theme = useTheme();
 
     const isXSMatch = useMediaQuery(theme.breakpoints.only('xs'));
@@ -13,7 +13,7 @@ const FullStackProjects = () => {
     return (
         <>
             <Box >
-            {isXSMatch ? <FSPXS />
+            {isXSMatch ? <DesignsXS />
                 : isSMMatch ? <h1>SM</h1>
                     : isMDMatch ? <h1>MD</h1>
                         : isLGMatch ? <h1>LG</h1>
@@ -25,4 +25,4 @@ const FullStackProjects = () => {
   )
 }
 
-export default FullStackProjects;
+export default DesginsMobile

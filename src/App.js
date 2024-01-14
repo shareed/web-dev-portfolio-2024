@@ -4,8 +4,8 @@ import './App.css';
 import NavigationBar from './components/navigation/NavigationBar';
 import Home from './components/home/home-breakpoints/Home';
 import { CssBaseline } from '@mui/material';
-import Designs from './components/projects/designs/Designs';
 import FullStackProjects from './components/projects/fullstackprojects/FullStackProjects';
+import Desgins from './components/projects/designs/Desgins';
 
 const navLinks = [
   {
@@ -30,7 +30,7 @@ function App() {
         <NavigationBar navLinks={ navLinks } />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/designs' element={<Designs />} />
+          <Route path='/designs' element={<Desgins />} />
           <Route path='/full-stack-projects' element={<FullStackProjects />} />
         </Routes>
       </Router>

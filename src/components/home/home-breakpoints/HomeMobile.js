@@ -6,6 +6,7 @@ const HomeMobile = () => {
     const theme = useTheme();
 
     const isMatch = useMediaQuery(theme.breakpoints.only('xs'))
+    
     //this component will only render when screen size is below 900
         //see Home.js
 

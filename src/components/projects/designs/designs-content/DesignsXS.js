@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
-import { designs } from '../../data/designData';
+import { designs } from '../../../data/designData';
 
-const Designs = () => {
+const DesignsXS = () => {
   return (
     <Box paddingTop={'5rem'} m={'1rem'}>
       <Box ml={'2rem'} mr={'2rem'} color='#FFFFFF'>
@@ -36,4 +36,4 @@ const Designs = () => {
   )
 }
 
-export default Designs
+export default DesignsXS;
