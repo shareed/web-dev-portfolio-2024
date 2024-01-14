@@ -18,6 +18,10 @@
 
 
 ## Components  ➡ 
+- `NavigationBar`: contains breakpoint for mobile and desktop navigation
+    - `NavLogo`: contains the logo 
+    - `MobileNavigation`: Navigation for xs, and sm breakpoints 0 to 899 screen
+    - `DesktopNavigation`:
 - `Home`: contains breakpoints/media queries for xs, sm, md, lg, xl
     - `HomeXS`: componet for xs breakpoint, screens 0 to 599
     - `HomeSM`: componet for sm breakpoint, screens 600 to 899

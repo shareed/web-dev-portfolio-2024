@@ -15,7 +15,7 @@ const NavigationBar = ({ navLinks }) => {
                             <NavLogo />
                             <MobileNavigation navLinks={navLinks} />
                         </>
-                        : <DesktopNavigation />
+                        : <DesktopNavigation navLinks={navLinks} />
                     }
         </Toolbar>
             </AppBar>
