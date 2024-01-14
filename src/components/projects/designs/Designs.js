@@ -3,23 +3,27 @@ import { designs } from '../../data';
 
 const Designs = () => {
   return (
-    <Box paddingTop={'5rem'}>
-      <Typography variant='h1' color='#FFFFFF' >
-        Desgins
+    <Box paddingTop={'5rem'} m={'1rem'}>
+      <Box ml={'2rem'} mr={'2rem'} color='#FFFFFF'>
+      <Typography variant='h5'  >
+        Desgin Templates
       </Typography>
-
-      <Grid container paddingTop={'5rem'} sx={{ backgroundColor: 'yellow' }}>
+      <Typography variant='p' >
+        Collection of design templates created using React and Material UI
+      </Typography>
+      </Box>
+      <Grid container paddingTop={'5rem'} >
         {
           designs.map(design => {
         return (
           <Grid item key={design.id} xs={12}>
-            <Card>
+            <Card sx={{m: '1rem', backgroundColor: 'rgb(77, 2, 77)', color: '#FFFFFF'}}>
               <CardMedia component='img' height='140' image={ design.image } alt={ design.name} />
               <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                     {design.name}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body2" >
                     {design.description}
                   </Typography>
               </CardContent>
