@@ -2,63 +2,69 @@ import { Grid, Box, Button, Typography } from '@mui/material';
 
 const HomeXL = () => {
     return (
-        <Grid container sx={{  }}>
-            <Grid item md={7} sx={{ color: 'red', height: '100vh' }} mt={'8rem'} pt={'2rem'}>
-                <Box sx={{}} mr={'1rem'} ml={'1rem'} >
-                    <Typography variant='h3' color={'white'} textAlign={'center'} fontFamily={'"Lemon", serif'} >
-                        Learn LG
+        <Grid container sx={{}}>
+        <Grid item md={7} sx={{ color: 'red', height: '100vh' }} mt={'8rem'} pt={'2rem'}>
+            <Grid container ml={'3rem'} >
+                <Grid item sx={12} >
+                    <Typography variant='h4' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
+                        Hi I'm XL
                     </Typography>
-                    <Typography variant='h3' color={'rgb(179, 10, 179)'} textAlign={'center'} fontFamily={'"Lemon", serif'}>
-                        Material Design
-                    </Typography>
-                </Box>
-                <Box fontFamily={'"Lemon", serif;'} m={'3rem'} mb={'2rem'} mt={'2rem'} textAlign={'center'}>
-                    <Typography sx={{
-                        color: '#50424F'
-                    }}
-                        variant='p'
-                    >
-                        Material UI is an open-source React component library that implements Google's Material Design. It's comprehensive and can be used in production out of the box.
-                    </Typography>
-                </Box>
-
-                <Box display={'flex'} justifyContent={'space-between'} m={'12rem'} mb={'2rem'} mt={'0'}>
-                    <Button sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF',  }}  >
-                        <Typography variant='p'>
-                            Start Learning
-                        </Typography>
-
-                    </Button>
-
-                    <Button sx={{ backgroundColor: '#50424F', color: '#FFFFFF', p: '1rem' }}>
-                        <Typography variant='p'>
-                            View Templates
-                        </Typography>
-
-                    </Button>
-                </Box>
+                </Grid>
             </Grid>
-            <Grid item md={5} sx={{ backgroundColor: 'rgb(77, 2, 77)', height: '80vh' }} mt={'3rem'} pt={'2rem'}>
-                <Box backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'35vh'}>
-                <Typography variant='h4' color={'white'}  >
-                    Learn Material Design
-                </Typography>
-                </Box>
-
-                <Box mt={'2rem'} backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'5vh'}>
-                <Typography variant='p' color={'white'} >
-                    Learn Material Design
-                </Typography>
-                </Box>
-                
-                <Box mt={'4rem'} backgroundColor={'rgb(179, 10, 179)'} height={'13vh'}  m={'1rem'} p={'1rem'}>
-                <Typography variant='p' color={'white'}  >
-                    Learn Material Design
-                </Typography>
-                </Box>
-
+            <Grid container ml={'4rem'}>
+                <Grid item sx={12}   >
+                    <Typography variant='h3' color={'#50424F'} fontFamily={'"Lemon", serif'} >
+                        Shannon Reed
+                    </Typography>
+                    <Typography variant='h3' mt={'-3.4rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
+                        Shannon Reed
+                    </Typography>
+                    <Typography variant='h3' mt={'-3.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
+                        Shannon Reed
+                    </Typography>
+                </Grid>
             </Grid>
+            <Grid container ml={'4rem'}>
+                <Grid item sx={12}  >
+                    <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
+                        Web Developer and Designer
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Box display={'flex'} justifyContent={'space-between'} m={'12rem'} mb={'2rem'} mt={'0'}>
+                <Button sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF', }}  >
+                    <Typography variant='p'>
+                        Start Learning
+                    </Typography>
+                </Button>
+                <Button sx={{ backgroundColor: '#50424F', color: '#FFFFFF', p: '1rem' }}>
+                    <Typography variant='p'>
+                        View Templates
+                    </Typography>
+                </Button>
+            </Box>
         </Grid>
+        <Grid item md={5} sx={{ backgroundColor: 'rgb(77, 2, 77)', height: '80vh' }} mt={'3rem'} pt={'2rem'}>
+            <Box backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'35vh'}>
+                <Typography variant='h4' color={'white'}  >
+                    Shannon Reed
+                </Typography>
+            </Box>
+
+            <Box mt={'2rem'} backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'5vh'}>
+                <Typography variant='p' color={'white'} >
+                    Shannon Reed
+                </Typography>
+            </Box>
+
+            <Box mt={'4rem'} backgroundColor={'rgb(179, 10, 179)'} height={'13vh'} m={'1rem'} p={'1rem'}>
+                <Typography variant='p' color={'white'}  >
+                    Shannon Reed
+                </Typography>
+            </Box>
+
+        </Grid>
+    </Grid>
     )
 }
 
