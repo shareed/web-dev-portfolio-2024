@@ -1,16 +1,27 @@
 import { Grid, Box, Button, Typography } from '@mui/material';
+import { NavLink } from 'react-router-dom';
+
 
 const HomeXL = () => {
     return (
         <Grid container sx={{}}>
-        <Grid item md={7} sx={{ color: 'red', height: '100vh' }} mt={'8rem'} pt={'2rem'}>
+{/* LEFT SIDE------------------------------------------------------------------------------------------------------------------------ */}
+
+            <Grid item md={7} sx={{ color: 'red', height: '100vh' }} mt={'8rem'} pt={'2rem'}>
+                 
+{/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
+
             <Grid container ml={'3rem'} >
                 <Grid item sx={12} >
                     <Typography variant='h4' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
                         Hi I'm XL
                     </Typography>
                 </Grid>
-            </Grid>
+                </Grid>
+                
+
+ {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
+               
             <Grid container ml={'4rem'}>
                 <Grid item sx={12}   >
                     <Typography variant='h3' color={'#50424F'} fontFamily={'"Lemon", serif'} >
@@ -23,27 +34,39 @@ const HomeXL = () => {
                         Shannon Reed
                     </Typography>
                 </Grid>
-            </Grid>
+                </Grid>
+                
+{/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
+
             <Grid container ml={'4rem'}>
                 <Grid item sx={12}  >
                     <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
                         Web Developer and Designer
                     </Typography>
                 </Grid>
+                </Grid>
+{/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
+
+            <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'5rem'} mr={'5rem'} >
+                    <NavLink to={'/contact'}>
+                    <Button id='contact-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF', mb: '1rem', width: '100%'  }}  >
+                        <Typography variant='p'>
+                            Contact Me
+                        </Typography>
+                    </Button>
+                    </NavLink>
+                    <NavLink to={'/projects'}>
+                    <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', color: '#FFFFFF',  width: '100%'  }}>
+                        <Typography variant='p'>
+                            Projects
+                        </Typography>
+                    </Button>
+                    </NavLink>
+                </Box>
             </Grid>
-            <Box display={'flex'} justifyContent={'space-between'} m={'12rem'} mb={'2rem'} mt={'0'}>
-                <Button sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF', }}  >
-                    <Typography variant='p'>
-                        Start Learning
-                    </Typography>
-                </Button>
-                <Button sx={{ backgroundColor: '#50424F', color: '#FFFFFF', p: '1rem' }}>
-                    <Typography variant='p'>
-                        View Templates
-                    </Typography>
-                </Button>
-            </Box>
-        </Grid>
+
+{/* RIGHT SIDE------------------------------------------------------------------------------------------------------------------------ */}
+    
         <Grid item md={5} sx={{ backgroundColor: 'rgb(77, 2, 77)', height: '80vh' }} mt={'3rem'} pt={'2rem'}>
             <Box backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'35vh'}>
                 <Typography variant='h4' color={'white'}  >
