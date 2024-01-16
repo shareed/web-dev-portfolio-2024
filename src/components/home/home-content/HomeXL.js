@@ -13,7 +13,7 @@ const HomeXL = () => {
 
             <Grid container ml={'3rem'} >
                 <Grid item sx={12} >
-                    <Typography variant='h4' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
+                    <Typography variant='h2' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
                         Hi I'm XL
                     </Typography>
                 </Grid>
@@ -24,13 +24,13 @@ const HomeXL = () => {
                
             <Grid container ml={'4rem'}>
                 <Grid item sx={12}   >
-                    <Typography variant='h3' color={'#50424F'} fontFamily={'"Lemon", serif'} >
+                    <Typography variant='h1' color={'#50424F'} fontFamily={'"Lemon", serif'} >
                         Shannon Reed
                     </Typography>
-                    <Typography variant='h3' mt={'-3.4rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
+                    <Typography variant='h1' mt={'-6.8rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
                         Shannon Reed
                     </Typography>
-                    <Typography variant='h3' mt={'-3.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
+                    <Typography variant='h1' mt={'-6.8rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
                         Shannon Reed
                     </Typography>
                 </Grid>
@@ -40,7 +40,7 @@ const HomeXL = () => {
 
             <Grid container ml={'4rem'}>
                 <Grid item sx={12}  >
-                    <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
+                    <Typography variant='h2' color={'white'} fontFamily={'"Lemon", serif'} >
                         Web Developer and Designer
                     </Typography>
                 </Grid>
@@ -49,14 +49,14 @@ const HomeXL = () => {
 
             <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'5rem'} mr={'5rem'} >
                     <NavLink to={'/contact'}>
-                    <Button id='contact-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF', mb: '1rem', width: '100%'  }}  >
+                    <Button id='contact-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', color: '#FFFFFF', mb: '1rem', width: '50%'  }}  >
                         <Typography variant='p'>
                             Contact Me
                         </Typography>
                     </Button>
                     </NavLink>
                     <NavLink to={'/projects'}>
-                    <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', color: '#FFFFFF',  width: '100%'  }}>
+                    <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', color: '#FFFFFF',  width: '50%'  }}>
                         <Typography variant='p'>
                             Projects
                         </Typography>
