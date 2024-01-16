@@ -5,7 +5,11 @@ import { NavLink } from 'react-router-dom';
 const HomeMD = () => {
     return (
         <Grid container >
+            {/* LEFT SIDE------------------------------------------------------------------------------------------------------------------------ */}
+
             <Grid item md={7} sx={{ height: '100vh' }} mt={'8rem'} pt={'2rem'} >
+                {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
+
                 <Grid container ml={'3rem'} >
                     <Grid item sx={12} >
                         <Typography variant='h4' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
@@ -13,6 +17,8 @@ const HomeMD = () => {
                         </Typography>
                     </Grid>
                 </Grid>
+                {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
+
                 <Grid container ml={'4rem'}>
                     <Grid item sx={12}   >
                         <Typography variant='h3' color={'#50424F'} fontFamily={'"Lemon", serif'} >
@@ -26,33 +32,39 @@ const HomeMD = () => {
                         </Typography>
                     </Grid>
                 </Grid>
+                {/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
+
                 <Grid container ml={'4rem'}>
                     <Grid item sx={12}  >
                         <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
                             Web Developer and Designer
                         </Typography>
                     </Grid>
-                </Grid>
-                <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'5rem'} mr={'5rem'} >
-            <NavLink  to={'/designs'}>
-                <Button id='designs-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%'  }}  >
-                    <Typography variant='p'>
-                        Contact Me
-                    </Typography>
-                </Button>
-                </NavLink>
 
-                <NavLink  to={'/full-stack-projects'}>
-                <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%'  }}>
-                    <Typography variant='p'>
-                        Projects
-                        
-                    </Typography>
-                </Button>
-                </NavLink>
-            </Box>
+                </Grid>
+{/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
+
+                <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'5rem'} mr={'5rem'} >
+                    <NavLink to={'/contact'}>
+                        <Button id='contact-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%' }}  >
+                            <Typography variant='p'>
+                                Contact Me
+                            </Typography>
+                        </Button>
+                    </NavLink>
+
+                    <NavLink to={'/projects'}>
+                        <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%' }}>
+                            <Typography variant='p'>
+                                Projects
+
+                            </Typography>
+                        </Button>
+                    </NavLink>
+                </Box>
             </Grid>
-            
+{/* RIGHT SIDE------------------------------------------------------------------------------------------------------------------------ */}
+
             <Grid item md={5} sx={{ backgroundColor: '#50424F', height: '80vh' }} mt={'3rem'} pt={'2rem'}>
                 <Box backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'35vh'}>
                     <Typography variant='h4' color={'white'}  >

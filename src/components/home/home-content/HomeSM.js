@@ -43,8 +43,8 @@ const HomeSM = () => {
 {/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
 
             <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'15rem'} mr={'15rem'} >
-            <NavLink  to={'/designs'}>
-                <Button id='designs-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%'  }}  >
+            <NavLink  to={'/contact'}>
+                <Button id='contact-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%'  }}  >
                     <Typography variant='p'>
                         Contact Me
                     </Typography>
