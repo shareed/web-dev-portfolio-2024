@@ -4,33 +4,41 @@ import { NavLink } from 'react-router-dom';
 const HomeSM = () => {
     return (
         <Box sx={{ height: '100vh', paddingTop: '10rem' }} >
-            <Grid container   >
-                <Grid item sx={12} m={'auto'} width={'57%'}>
-                        <Typography variant='h4' color={'white'} textAlign={'center'} fontFamily={'"Lemon", serif'} >
+            <Box ml={'3rem'} mr={'1rem'}>
+                <Grid container >
+                    <Grid item sx={12} >
+                        <Typography variant='h3' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
+                            Hi I'm SM
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid container>
+                    <Grid item sx={12}  >
+                        <Typography variant='h2' color={'#50424F'} fontFamily={'"Lemon", serif'} >
                             Shannon Reed
                         </Typography>
+                        <Typography variant='h2' mt={'-4.4rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
+                            Shannon Reed
+                        </Typography>
+                        <Typography variant='h2' mt={'-4.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
+                            Shannon Reed
+                        </Typography>
+                    </Grid>
                 </Grid>
-            </Grid>
-
-            <Box fontFamily={'"Lemon", serif;'} m={'2rem'} textAlign={'center'}>
-                <Typography sx={{
-                    color: '#50424F'
-                }}
-                    variant='p'
-                >
-                    Software Engineer located Las Vegas, Nevada. 
-                        I specialize in writing clean elegant code that brings 
-                        magnificent user friendly designs to life. Holding a 
-                        Bachelor’s Degree in Information Technology and Web Development,
-                        for 4+ years I have worked with Front-End, Back-End, UX/UI and BPM Software.
-                </Typography>
+                <Grid container>
+                    <Grid item sx={12}  >
+                        <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
+                            Web Developer and Designer
+                        </Typography>
+                    </Grid>
+                </Grid>
             </Box>
 
-            <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'7rem'} mr={'7rem'} >
+            <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'15rem'} mr={'15rem'} >
             <NavLink  to={'/designs'}>
                 <Button id='designs-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%'  }}  >
                     <Typography variant='p'>
-                        UX/UI Designs
+                        Contact Me
                     </Typography>
                 </Button>
                 </NavLink>
@@ -38,7 +46,7 @@ const HomeSM = () => {
                 <NavLink  to={'/full-stack-projects'}>
                 <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%'  }}>
                     <Typography variant='p'>
-                        Full Stack Projects
+                        Projects
                         
                     </Typography>
                 </Button>
