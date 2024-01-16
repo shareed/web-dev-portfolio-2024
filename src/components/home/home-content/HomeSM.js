@@ -4,7 +4,10 @@ import { NavLink } from 'react-router-dom';
 const HomeSM = () => {
     return (
         <Box sx={{ height: '100vh', paddingTop: '10rem' }} >
+{/* TEXT ------------------------------------------------------------------------------------------------------------------------ */}
             <Box ml={'3rem'} mr={'1rem'}>
+
+{/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container >
                     <Grid item sx={12} >
                         <Typography variant='h3' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
@@ -12,6 +15,8 @@ const HomeSM = () => {
                         </Typography>
                     </Grid>
                 </Grid>
+{/* NAME------------------------------------------------------------------------------------------------------------------------ */}
+
                 <Grid container>
                     <Grid item sx={12}  >
                         <Typography variant='h2' color={'#50424F'} fontFamily={'"Lemon", serif'} >
@@ -25,6 +30,8 @@ const HomeSM = () => {
                         </Typography>
                     </Grid>
                 </Grid>
+{/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
+
                 <Grid container>
                     <Grid item sx={12}  >
                         <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
@@ -33,6 +40,7 @@ const HomeSM = () => {
                     </Grid>
                 </Grid>
             </Box>
+{/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
 
             <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'15rem'} mr={'15rem'} >
             <NavLink  to={'/designs'}>
@@ -43,7 +51,7 @@ const HomeSM = () => {
                 </Button>
                 </NavLink>
 
-                <NavLink  to={'/full-stack-projects'}>
+                <NavLink  to={'/projects'}>
                 <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%'  }}>
                     <Typography variant='p'>
                         Projects

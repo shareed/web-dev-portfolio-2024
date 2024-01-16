@@ -1,8 +1,12 @@
-import React from 'react'
+import { Box, Typography } from '@mui/material'
 
 const ContactMD = () => {
   return (
-    <div>ContactMD</div>
+    <Box mt={'6rem'} height={'100vh'}>
+      <Typography variant='h3'>
+        Contact Me MD
+      </Typography>
+    </Box>
   )
 }
 
