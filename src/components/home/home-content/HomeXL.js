@@ -57,7 +57,7 @@ const HomeXL = () => {
                     </NavLink>
                     <NavLink to={'/projects'}>
                     <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', color: '#FFFFFF',  width: '50%'  }}>
-            3        <Typography variant='p'>
+                    <Typography variant='p'>
                             Projects
                         </Typography>
                     </Button>
