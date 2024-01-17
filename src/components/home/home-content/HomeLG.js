@@ -19,13 +19,13 @@ const HomeLG = () => {
 
                 <Grid container ml={'4rem'}>
                     <Grid item sx={12}   >
-                        <Typography variant='h3' color={'#50424F'} fontFamily={'"Lemon", serif'} >
+                        <Typography variant='h2' color={'#50424F'} fontFamily={'"Lemon", serif'} >
                             Shannon Reed
                         </Typography>
-                        <Typography variant='h3' mt={'-3.4rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
+                        <Typography variant='h2' mt={'-4.3rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
                             Shannon Reed
                         </Typography>
-                        <Typography variant='h3' mt={'-3.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
+                        <Typography variant='h2' mt={'-4.3rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
                             Shannon Reed
                         </Typography>
                     </Grid>
@@ -34,7 +34,7 @@ const HomeLG = () => {
 
                 <Grid container ml={'4rem'}>
                     <Grid item sx={12}  >
-                        <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
+                        <Typography variant='h4' color={'white'} fontFamily={'"Lemon", serif'} >
                             Web Developer and Designer
                         </Typography>
                     </Grid>
