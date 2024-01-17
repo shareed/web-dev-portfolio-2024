@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const Projects = () => {
   return (
-      <Box mt={'6rem'} height={'100vh'}>
+      <Box pt={'5rem'} height={'100vh'}>
           <NavLink to={'/full-stack-projects'}>
               Full Stack Projects
           </NavLink>
