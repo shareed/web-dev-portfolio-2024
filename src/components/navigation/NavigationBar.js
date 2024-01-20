@@ -1,14 +1,15 @@
-import { AppBar, Toolbar, useTheme, useMediaQuery } from '@mui/material';
+import { Toolbar, useTheme, useMediaQuery } from '@mui/material';
 import NavLogo from './NavLogo';
 import MobileNavigation from './mobile/MobileNavigation';
 import DesktopNavigation from './desktop/DesktopNavigation';
+import { NavigationBarContainer } from '../../styles/navigationBar';
 
 const NavigationBar = ({ navLinks }) => {
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down('md'));
     return (
         <>
-            <AppBar sx={{ backgroundColor: '#B7A6B5', borderBottom: '.1rem solid rgb(179, 10, 179)' }}>
+            <NavigationBarContainer>
                 <Toolbar>
                     {isMatch
                         ? <>
@@ -17,10 +18,10 @@ const NavigationBar = ({ navLinks }) => {
                         </>
                         : <DesktopNavigation navLinks={navLinks} />
                     }
-        </Toolbar>
-            </AppBar>
+                </Toolbar>
+            </NavigationBarContainer>
         </>
-          )
+    )
 }
 
 export default NavigationBar

@@ -53,7 +53,7 @@
 
 ## Color Schema
 <div class=' color one'>
-    <p class='text' >RGB: </p>
+    <p class='text' >RGB: rgb(179, 10, 179)</p>
     <p class='text' >Hex: #B30AB3 </p>
  </div>
  <div class=' color two'>
