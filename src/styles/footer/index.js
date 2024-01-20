@@ -7,7 +7,7 @@ export const FooterTitle = styled(Typography)(() => ({
   marginBottom: "1em",
 }));
 
-export const SubscribeTf = styled(TextField)(() => ({
+export const Contact = styled(TextField)(() => ({
   ".MuiInputLabel-root": {//targeting the label of the input
     color: Colors.white,
   },
