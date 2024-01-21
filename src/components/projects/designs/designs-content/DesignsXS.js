@@ -1,4 +1,4 @@
-import { Box, CardContent, Grid, Typography } from '@mui/material';
+import { CardContent, Grid, Typography } from '@mui/material';
 import { designs } from '../../../data/designData';
 import { ProjectCard, ProjectCardMedia, ProjectsContainer, ProjectsHeaderContainer } from '../../../../styles/projects';
 

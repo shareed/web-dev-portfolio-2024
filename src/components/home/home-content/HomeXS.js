@@ -1,8 +1,9 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import { HomeMobileContainer } from '../../../styles/home';
 const HomeXS = () => {
     return (
-        <Box sx={{ height: '100vh', paddingTop: '10rem' }} >
+        <HomeMobileContainer >
             <Box ml={'3rem'} mr={'3rem'}>
 {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container >
@@ -56,7 +57,7 @@ const HomeXS = () => {
                     </Button>
                 </NavLink>
             </Box>
-        </Box >
+        </HomeMobileContainer >
     )
 }
 
