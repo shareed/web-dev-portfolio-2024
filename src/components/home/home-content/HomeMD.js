@@ -9,7 +9,11 @@ import {
     IntroText,
     HomeButtonContainer,
     HomeContactButton,
-    HomeProjectButton
+    HomeProjectButton,
+    DesktopRightSide,
+    DesktopRightTopContent,
+    DesktopRightMiddleContent,
+    DesktopRightBottomContent
 } from '../../../styles/home';
 
 
@@ -80,26 +84,28 @@ const HomeMD = () => {
             </DesktopLeftSide>
 {/* RIGHT SIDE------------------------------------------------------------------------------------------------------------------------ */}
 
-            <Grid item md={5} sx={{ backgroundColor: '#50424F', height: '80vh' }} mt={'3rem'} pt={'2rem'}>
-                <Box backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'35vh'}>
-                    <Typography variant='h4' color={'white'}  >
-                        Shannon Reed
+            <DesktopRightSide item md={5}>
+                <DesktopRightTopContent>
+                    <Typography variant='h6' color={'white'}  >
+                        I do not like to put all my eggs in one basket so I have a
+                        passion for full stack development. I have created a catalog
+                        of projects to demonstrate the variety of skills I have acummalated.
                     </Typography>
-                </Box>
+                </DesktopRightTopContent>
 
-                <Box mt={'2rem'} backgroundColor={'rgb(179, 10, 179)'} m={'1rem'} p={'1rem'} height={'5vh'}>
+                <DesktopRightMiddleContent>
                     <Typography variant='p' color={'white'} >
-                        Shannon Reed
+                        Some of my Top skills
                     </Typography>
-                </Box>
+                </DesktopRightMiddleContent>
 
-                <Box mt={'4rem'} backgroundColor={'rgb(179, 10, 179)'} height={'13vh'} m={'1rem'} p={'1rem'}>
+                <DesktopRightBottomContent>
                     <Typography variant='p' color={'white'}  >
-                        Shannon Reed
+                        Play around with some of the functionality I created below
                     </Typography>
-                </Box>
+                </DesktopRightBottomContent>
 
-            </Grid>
+            </DesktopRightSide >
         </Grid>
     )
 }

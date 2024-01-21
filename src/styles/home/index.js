@@ -34,26 +34,7 @@ export const IntroBottomText = styled(IntroText)((() => ({
 
 })))
 
-//MOBILE--------------------------------------------------------------------------------------------------------
-// Container--------------------
-export const MobileHomeContainer = styled(Box)((() => ({
-    height: '100vh',
-    paddingTop: '10rem',
-
-})))
-
-// Intro Content Container--------------------
-export const MobileIntroContainer = styled(Box)((() => ({
-    marginLeft: '3rem',
-    marginRight: '1rem',
-    marginBottom: '2rem'
-})))
-
-// Intro Content Top Line Text--------------------
-export const MobileIntroTopLine = styled(IntroText)((() => ({
-    textAlign: 'center',
-})))
-
+//Home Buttons------------------------
 export const HomeButtonContainer = styled(Box)((() => ({
     margin: '0 auto',
     width: '50%',
@@ -76,8 +57,33 @@ export const HomeProjectButton = styled(Button)((() => ({
 
 })))
 
+
+
+
+//MOBILE--------------------------------------------------------------------------------------------------------
+// Container--------------------
+export const MobileHomeContainer = styled(Box)((() => ({
+    height: '100vh',
+    paddingTop: '10rem',
+
+})))
+
+// Intro Content Container--------------------
+export const MobileIntroContainer = styled(Box)((() => ({
+    marginLeft: '3rem',
+    marginRight: '1rem',
+    marginBottom: '2rem'
+})))
+
+// Intro Content Top Line Text--------------------
+export const MobileIntroTopLine = styled(IntroText)((() => ({
+    textAlign: 'center',
+})))
+
+
+
 //DESKTOP--------------------------------------------------------------------------------------------------------
-//Desktop Left Side
+//Desktop Left Side----------------------------------
 export const DesktopLeftSide = styled(Grid)((() => ({
     height: '100vh',
     marginTop: '8rem',
@@ -87,4 +93,30 @@ export const DesktopLeftSide = styled(Grid)((() => ({
 export const DesktopIntroTopLine = styled(IntroText)((() => ({
     textAlign: 'center',
     color: Colors.white,
+})))
+
+//Desktop Right Side----------------------------------
+export const DesktopRightSide = styled(Grid)((() => ({
+    backgroundColor: Colors.secondary,
+    height: '80vh',
+    marginTop: '3rem',
+    paddingTop: '2rem'
+})))
+
+export const DesktopRightContentContainer = styled(Box)((() => ({
+    backgroundColor: Colors.purple,
+    margin: '1rem',
+    padding: '1rem',
+})))
+
+export const DesktopRightTopContent = styled(DesktopRightContentContainer)((() => ({
+    height: '35vh'
+})))
+
+export const DesktopRightMiddleContent = styled(DesktopRightContentContainer)((() => ({
+    height: '7vh',
+})))
+
+export const DesktopRightBottomContent = styled(DesktopRightContentContainer)((() => ({
+    height: '13vh'
 })))
