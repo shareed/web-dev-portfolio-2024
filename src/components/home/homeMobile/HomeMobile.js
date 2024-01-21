@@ -1,11 +1,14 @@
-import { Box, Button, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import { HeaderBottomLine, HeaderMiddleLineBottom, HeaderMiddleLineMiddle, HeaderMiddleLineTop, HeaderTopLine, HomeMobileContainer } from '../../../styles/home';
-const HomeXS = () => {
+import { ContactMeButton, HeaderBottomLine, HeaderMiddleLineBottom, HeaderMiddleLineMiddle, HeaderMiddleLineTop, HeaderTopLine, HomeButtonContainer, HomeHeaderContainer, HomeMobileContainer, ProjectButton } from '../../../styles/home';
+
+
+
+const HomeMobile = () => {
     return (
         <HomeMobileContainer >
-            <Box ml={'3rem'} mr={'3rem'}>
-{/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
+            <HomeHeaderContainer>
+                {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container >
                     <Grid item sx={12} >
                         <HeaderTopLine variant='h4' >
@@ -13,7 +16,7 @@ const HomeXS = () => {
                         </HeaderTopLine>
                     </Grid>
                 </Grid>
-{/* NAME------------------------------------------------------------------------------------------------------------------------ */}
+                {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
                         <HeaderMiddleLineBottom variant='h3'  >
@@ -27,7 +30,7 @@ const HomeXS = () => {
                         </HeaderMiddleLineTop>
                     </Grid>
                 </Grid>
-{/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
+                {/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
                         <HeaderBottomLine variant='h4'>
@@ -35,30 +38,29 @@ const HomeXS = () => {
                         </HeaderBottomLine>
                     </Grid>
                 </Grid>
-            </Box>
+            </HomeHeaderContainer>
 
 
-{/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
-            <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'7rem'} mr={'7rem'} >
-                <NavLink to={'/contact'}>
-                    <Button id='contact-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%' }}  >
+            {/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
+            <HomeButtonContainer >
+                <NavLink to={'/contact'} >
+                    <ContactMeButton id='contact-home-button' >
                         <Typography variant='p'>
                             Contact Me
                         </Typography>
-                    </Button>
+                    </ContactMeButton>
                 </NavLink>
 
                 <NavLink to={'/projects'}>
-                    <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%' }}>
+                    <ProjectButton id='projects-home-button' >
                         <Typography variant='p'>
                             Projects
-
                         </Typography>
-                    </Button>
+                    </ProjectButton>
                 </NavLink>
-            </Box>
+            </HomeButtonContainer>
         </HomeMobileContainer >
     )
 }
 
-export default HomeXS
+export default HomeMobile
