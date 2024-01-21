@@ -15,13 +15,13 @@ const HomeXS = () => {
 {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
-                        <Typography variant='h3' color={'#50424F'} fontFamily={'"Lemon", serif'} >
+                        <Typography variant='h3' fontSize={'2.9rem'} color={'#50424F'} fontFamily={'"Lemon", serif'} >
                             Shannon Reed
                         </Typography>
-                        <Typography variant='h3' mt={'-3.4rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
+                        <Typography variant='h3' fontSize={'2.9rem'} mt={'-3.3rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
                             Shannon Reed
                         </Typography>
-                        <Typography variant='h3' mt={'-3.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
+                        <Typography variant='h3' fontSize={'2.9rem'} mt={'-3.3rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
                             Shannon Reed
                         </Typography>
                     </Grid>
@@ -29,8 +29,8 @@ const HomeXS = () => {
 {/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
-                        <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
-                            Web Developer and Designer
+                        <Typography variant='h4' color={'white'} fontFamily={'"Lemon", serif'} >
+                            Web Developer & Designer
                         </Typography>
                     </Grid>
                 </Grid>

@@ -8,11 +8,11 @@ export const FooterTitle = styled(Typography)(() => ({
 }));
 
 export const Contact = styled(TextField)(() => ({
-  ".MuiInputLabel-root": {//targeting the label of the input
+  ".MuiInputLabel-root": {
     color: Colors.white,
   },
 
-  ".MuiInput-root::before": {//targeting the Input of the input
+  ".MuiInput-root::before": {
     borderBottom: `1px solid ${Colors.white}`,
   },
 }));
