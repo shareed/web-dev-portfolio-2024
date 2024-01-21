@@ -8,25 +8,29 @@ export const HomeMobileContainer = styled(Box)((() => ({
     paddingTop: '10rem'
 })))
 
-
-export const HeaderTopLine = styled(Typography)((() => ({
-    textAlign: 'center',
-    color: Colors.white,
-    fontFamily: 'Lemon, serif'
-
+export const HomeHeaderContainer = styled(Box)((() => ({
+    marginLeft: '3rem',
+    marginRight: '1rem',
 })))
 
-export const HeaderMiddleLineBottom = styled(Typography)((({theme}) => ({
+export const HomeHeaderText = styled(Typography)((() => ({
+    fontFamily: 'Lemon, serif'
+})))
+
+export const HeaderTopLine = styled(HomeHeaderText)((() => ({
+    textAlign: 'center',
+    color: Colors.white,
+})))
+
+export const HeaderMiddleLineBottom = styled(HomeHeaderText)((({theme}) => ({
     color: Colors.secondary,
-    fontFamily: 'Lemon, serif',
     [theme.breakpoints.only('xs')]: {
         fontSize: '2.9rem',
     }
 })))
 
-export const HeaderMiddleLineMiddle = styled(Typography)((({theme}) => ({
+export const HeaderMiddleLineMiddle = styled(HomeHeaderText)((({theme}) => ({
     color: Colors.primary,
-    fontFamily: 'Lemon, serif',
     marginTop: '-4.4rem',
     [theme.breakpoints.only('xs')]: {
         fontSize: '2.9rem',
@@ -39,5 +43,10 @@ export const HeaderMiddleLineTop = styled(HeaderMiddleLineMiddle, Typography)(((
     [theme.breakpoints.only('sm')]: {
         marginTop: '-4.3rem',
     }
+
+})))
+
+export const HeaderBottomLine = styled(HomeHeaderText)((() => ({
+    color: Colors.white,
 
 })))

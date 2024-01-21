@@ -1,11 +1,11 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import { HeaderTopLine, HomeMobileContainer, HeaderMiddleLineBottom, HeaderMiddleLineMiddle, HeaderMiddleLineTop } from '../../../styles/home';
+import { HeaderTopLine, HomeMobileContainer, HeaderMiddleLineBottom, HeaderMiddleLineMiddle, HeaderMiddleLineTop, HomeHeaderContainer, HeaderBottomLine } from '../../../styles/home';
 const HomeSM = () => {
     return (
         <HomeMobileContainer >
 {/* TEXT ------------------------------------------------------------------------------------------------------------------------ */}
-            <Box ml={'3rem'} mr={'1rem'}>
+            <HomeHeaderContainer>
 
 {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container >
@@ -34,12 +34,12 @@ const HomeSM = () => {
 
                 <Grid container>
                     <Grid item sx={12}  >
-                        <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
-                            Web Developer and Designer
-                        </Typography>
+                        <HeaderBottomLine variant='h3'>
+                            Web Developer & Designer
+                        </HeaderBottomLine>
                     </Grid>
                 </Grid>
-            </Box>
+            </HomeHeaderContainer>
 {/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
 
             <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'15rem'} mr={'15rem'} >
@@ -54,8 +54,7 @@ const HomeSM = () => {
                 <NavLink  to={'/projects'}>
                 <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%'  }}>
                     <Typography variant='p'>
-                        Projects
-                        
+                        Projects             
                     </Typography>
                 </Button>
                 </NavLink>
