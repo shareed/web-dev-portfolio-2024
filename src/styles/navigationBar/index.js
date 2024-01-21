@@ -1,4 +1,4 @@
-import { AppBar, Box, Typography } from "@mui/material";
+import { AppBar, Box} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Colors } from "../theme";
 

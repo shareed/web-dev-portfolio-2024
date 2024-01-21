@@ -1,14 +1,15 @@
-import { Box, Typography } from '@mui/material';
+import React from 'react'
+import { LogoContainer, LogoImage } from '../../styles/navigationBar'
 import logoS from '../../logo-s.svg'
 import logoS2 from '../../logo-s2.svg'
 import logoS3 from '../../logo-s3.svg'
-import { NavLink } from 'react-router-dom';
-import { LogoContainer, LogoImage } from '../../styles/navigationBar';
+import { NavLink } from 'react-router-dom'
+import { Box } from '@mui/material'
 
-const NavLogo = () => {
-    return (
-        <LogoContainer>
-            <NavLink to={'/'}>
+const NavigationBarLogo = () => {
+  return (
+      <LogoContainer>
+          <NavLink to={'/'}>
                 <Box>
                     <LogoImage src={logoS3} />
                 </Box>
@@ -20,8 +21,8 @@ const NavLogo = () => {
                     <LogoImage src={logoS} />
                 </Box>
             </NavLink>
-        </LogoContainer>
-    )
+    </LogoContainer>
+  )
 }
 
-export default NavLogo
+export default NavigationBarLogo

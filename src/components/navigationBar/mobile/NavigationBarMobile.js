@@ -1,15 +1,14 @@
 import { useState } from 'react';
 import { Drawer, IconButton } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import MobileNavigationList from './MobileNavigationList';
+import NavigationBarMobileList from './NavigationBarMobileList'
 
-const MobileNavigation = ({ navLinks }) => {
+const NavigationBarMobile = ({ matches, navLinks }) => {
   const [open, setOpen] = useState(false)
   return (
-
     <>
         <Drawer PaperProps={{sx:{backgroundColor: 'rgb(77, 2, 77)'}}} open={open} onClose={() => setOpen(false)}>
-          <MobileNavigationList color='#FFFFFF' navLinks={navLinks} onSelectedClick={() => setOpen(false)} />
+          <NavigationBarMobileList color='#FFFFFF' navLinks={navLinks} onSelectedClick={() => setOpen(false)} />
         </Drawer>
         <IconButton sx={{marginLeft: 'auto', color: 'rgb(179, 10, 179)'}}onClick={() => setOpen(!open)}>
           <MenuIcon />
@@ -18,4 +17,4 @@ const MobileNavigation = ({ navLinks }) => {
   )
 }
 
-export default MobileNavigation;
+export default NavigationBarMobile

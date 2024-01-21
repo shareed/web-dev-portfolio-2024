@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css';
-import NavigationBar from './components/navigation/NavigationBar';
+import NavigationBar from './components/navigationBar';
 import Home from './components/home/Home';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import theme from "./styles/theme";

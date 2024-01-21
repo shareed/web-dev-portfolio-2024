@@ -2,7 +2,7 @@ import { Grid, Tab, Tabs } from '@mui/material';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const DesktopNavigationTabs = ({navLinks}) => {
+const NavigationBarTabs = ({navLinks}) => {
     const [value, setValue] = useState()
     return (
 
@@ -19,4 +19,4 @@ const DesktopNavigationTabs = ({navLinks}) => {
     )
 }
 
-export default DesktopNavigationTabs
+export default NavigationBarTabs;
