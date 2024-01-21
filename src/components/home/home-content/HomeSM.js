@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import { HomeMobileContainer } from '../../../styles/home';
+import { HeaderTopLine, HomeMobileContainer } from '../../../styles/home';
 const HomeSM = () => {
     return (
         <HomeMobileContainer >
@@ -10,9 +10,9 @@ const HomeSM = () => {
 {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container >
                     <Grid item sx={12} >
-                        <Typography variant='h3' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
+                        <HeaderTopLine variant='h3'>
                             Hi I'm SM
-                        </Typography>
+                        </HeaderTopLine>
                     </Grid>
                 </Grid>
 {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
