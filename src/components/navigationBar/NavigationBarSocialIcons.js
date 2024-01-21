@@ -1,4 +1,4 @@
-import { Grid, ListItemIcon } from "@mui/material"
+import { ListItemIcon } from "@mui/material"
 import { SocialIconsContainerDesktop, SocialIconsContainerMobile, SocialIconsList } from "../../styles/socialIcons"
 import { GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material"
 

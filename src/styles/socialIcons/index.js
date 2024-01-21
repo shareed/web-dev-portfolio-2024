@@ -16,7 +16,7 @@ export const SocialIconsList = styled(List)(({ type, matches, theme }) => ({
 //Puts the options container at the botton of the screen for Mobile
 export const SocialIconsContainerMobile = styled(Box)(() => ({
   display: 'flex',
-  background: Colors.secondary,
+  background: Colors.purple,
   position: "fixed",
   bottom: 0,
   left: 0,

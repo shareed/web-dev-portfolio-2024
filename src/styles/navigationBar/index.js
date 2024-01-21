@@ -1,6 +1,7 @@
-import { AppBar, Box } from "@mui/material";
+import { AppBar, Box} from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Colors } from "../theme";
+
 
 export const NavigationBarContainer = styled(AppBar)((() => ({
     backgroundColor: Colors.primary,
@@ -9,12 +10,14 @@ export const NavigationBarContainer = styled(AppBar)((() => ({
     paddingBottom: '.5rem'
 })))
 
+
+
+// Logo--------------------------------------------------------------------------------------------------
 export const LogoContainer = styled(Box)((() => ({
     textAlign: 'center',
     color: Colors.purple,
 
 })))
-
 
 export const LogoImage = styled('img')((({src}) => ({
     src: `url(${src})`,

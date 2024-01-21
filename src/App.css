@@ -7,6 +7,10 @@ a {
     
 }
 
-#mobile-nav-link, #contact-home-button, #projects-home-button{
+ #contact-home-button, #projects-home-button{
     color: #FFFFFF;
+}
+
+#mobile-nav-link{
+    color: #B7A6B5;
 }
