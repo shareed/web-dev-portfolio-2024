@@ -1,5 +1,6 @@
-import { Box, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Box, CardContent, Grid, Typography } from '@mui/material';
 import { projects } from '../../../data/projectData';
+import { ProjectCard, ProjectCardMedia } from '../../../../styles/projects';
 
 const FSPXS = () => {
   return (
@@ -17,8 +18,8 @@ const FSPXS = () => {
           projects.map(project => {
         return (
           <Grid item key={project.id} xs={12}>
-            <Card sx={{m: '1rem', backgroundColor: '#50424F', color: '#FFFFFF', border: '.2rem solid #B30AB3'}}>
-              <CardMedia component='img' height='140' image={ project.image } alt={ project.name} />
+            <ProjectCard >
+              <ProjectCardMedia component='img' height='140' image={ project.image } alt={ project.name} />
               <CardContent>
               <Typography gutterBottom variant="h5" component="div">
                     {project.name}
@@ -27,7 +28,7 @@ const FSPXS = () => {
                     {project.description}
                   </Typography>
               </CardContent>
-            </Card>
+            </ProjectCard>
           </Grid>
         )
       })}

@@ -1,6 +1,6 @@
 import { List, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import { NavLink } from 'react-router-dom';
-import { Colors } from "../../../styles/theme";
+
 
 const NavigationBarMobileList = ({ navLinks, onSelectedClick}) => {
     return (
@@ -9,7 +9,7 @@ const NavigationBarMobileList = ({ navLinks, onSelectedClick}) => {
                   <ListItemButton key={index} divider onClick={onSelectedClick}>
                       <ListItemIcon>
                           <ListItemText >
-                              <NavLink id='mobile-nav-link' to={link.path} sx={{ color: Colors.primary }}>
+                              <NavLink id='mobile-nav-link' to={link.path}>
                                   {link.name}
                               </NavLink>
   

@@ -1,5 +1,6 @@
-import { Box, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Box, CardContent, Grid, Typography } from '@mui/material';
 import { designs } from '../../../data/designData';
+import { ProjectCard, ProjectCardMedia } from '../../../../styles/projects';
 
 const DesignsXS = () => {
   return (
@@ -17,8 +18,8 @@ const DesignsXS = () => {
           designs.map(design => {
         return (
           <Grid item key={design.id} xs={12}>
-            <Card sx={{m: '1rem', backgroundColor: '#50424F', color: '#FFFFFF', border: '.2rem solid #B30AB3'}}>
-              <CardMedia component='img' height='140' image={design.image} alt={design.name}  />
+            <ProjectCard>
+              <ProjectCardMedia  image={design.image} alt={design.name}  />
               <CardContent color={'#B30AB3'}>
               <Typography gutterBottom variant="h5" component="div">
                     {design.name}
@@ -27,7 +28,7 @@ const DesignsXS = () => {
                     {design.description}
                   </Typography>
               </CardContent>
-            </Card>
+              </ProjectCard>
           </Grid>
         )
       })}
