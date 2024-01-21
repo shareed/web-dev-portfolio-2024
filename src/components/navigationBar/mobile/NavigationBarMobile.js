@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Drawer, IconButton } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import NavigationBarMobileList from './NavigationBarMobileList'
+import NavigationBarSocialIcons from '../NavigationBarSocialIcons';
 
 const NavigationBarMobile = ({ matches, navLinks }) => {
   const [open, setOpen] = useState(false)
@@ -12,7 +13,8 @@ const NavigationBarMobile = ({ matches, navLinks }) => {
         </Drawer>
         <IconButton sx={{marginLeft: 'auto', color: 'rgb(179, 10, 179)'}}onClick={() => setOpen(!open)}>
           <MenuIcon />
-        </IconButton>
+      </IconButton>
+      <NavigationBarSocialIcons matches={matches}/>
         </>
   )
 }
