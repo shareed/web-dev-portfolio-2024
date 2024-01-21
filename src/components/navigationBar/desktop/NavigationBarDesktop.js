@@ -7,15 +7,15 @@ const NavigationBarDesktop = ({ matches, navLinks }) => {
    
     return (
             <Grid sx={{ placeItems: 'center' }} container>
-                <Grid item xs={1}>
+                <Grid item md={1}>
                     <NavigationBarLogo />
                 </Grid>
-                <Grid item xs={1} />
-                <Grid item xs={6}>
+                <Grid item md={1} />
+                <Grid item md={6}>
                     <NavigationBarTabs navLinks={navLinks} />
                 </Grid>
-                <Grid item xs={1} />
-                <Grid item sx={2}>
+                <Grid item md={1} />
+                <Grid item md={2}>
                     <NavigationBarSocialIcons matches={matches} />
                 </Grid>
 

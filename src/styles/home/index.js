@@ -1,63 +1,57 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import { Colors } from "../theme";
+//ALL SCREENS-------------------------------------------------------------------------------------------------------------
 
-// Container------------------------------------------------------
-export const HomeMobileContainer = styled(Box)((() => ({
+export const IntroText = styled(Typography)((() => ({
+    fontFamily: 'Lemon, serif',
+    color: Colors.white,
+})))
+
+
+// Intro Content Stack Middle Line Text--------------------
+
+export const IntroNameBottom = styled(IntroText)((({theme}) => ({
+    color: Colors.secondary,
+})))
+
+
+export const IntroNameMiddle = styled(IntroText)((({theme}) => ({
+    color: Colors.primary,
+    marginTop: '-3.4rem',
+    [theme.breakpoints.only('xl')]: {
+        marginTop: '-4.4rem'
+    }
+})))
+
+export const IntroNameTop = styled(IntroNameMiddle, Typography)((({theme}) => ({
+    color: Colors.purple,
+})))
+
+// Intro Content Bottom Line Text--------------------
+export const IntroBottomText = styled(IntroText)((() => ({
+    color: Colors.white,
+
+})))
+
+//MOBILE--------------------------------------------------------------------------------------------------------
+// Container--------------------
+export const MobileHomeContainer = styled(Box)((() => ({
     height: '100vh',
     paddingTop: '10rem',
 
 })))
 
-// Header Content Container------------------------------------------------------
-export const HomeHeaderContainer = styled(Box)((() => ({
+// Intro Content Container--------------------
+export const MobileIntroContainer = styled(Box)((() => ({
     marginLeft: '3rem',
     marginRight: '1rem',
     marginBottom: '2rem'
 })))
 
-// Header Content Text------------------------------------------------------
-export const HomeHeaderText = styled(Typography)((() => ({
-    fontFamily: 'Lemon, serif'
-})))
-
-// Header Content Top Line Text------------------------------------------------------
-export const HeaderTopLine = styled(HomeHeaderText)((() => ({
+// Intro Content Top Line Text--------------------
+export const MobileIntroTopLine = styled(IntroText)((() => ({
     textAlign: 'center',
-    color: Colors.white,
-})))
-
-// Header Content Stack Middle Line Text------------------------------------------------------
-
-export const HeaderMiddleLineBottom = styled(HomeHeaderText)((({theme}) => ({
-    color: Colors.secondary,
-    // [theme.breakpoints.only('xs')]: {
-    //     fontSize: '2.9rem',
-    // }
-})))
-
-export const HeaderMiddleLineMiddle = styled(HomeHeaderText)((({theme}) => ({
-    color: Colors.primary,
-    marginTop: '-3.4rem',
-    // [theme.breakpoints.only('xs')]: {
-    //     fontSize: '2.9rem',
-    //     marginTop: '-3.3rem',
-    // }
-})))
-
-export const HeaderMiddleLineTop = styled(HeaderMiddleLineMiddle, Typography)((({theme}) => ({
-    color: Colors.purple,
-    // [theme.breakpoints.only('sm')]: {
-    //     marginTop: '-4.3rem',
-    // }
-
-})))
-
-// Header Content Bottom Line Text------------------------------------------------------
-
-export const HeaderBottomLine = styled(HomeHeaderText)((() => ({
-    color: Colors.white,
-
 })))
 
 export const HomeButtonContainer = styled(Box)((() => ({
@@ -69,15 +63,28 @@ export const HomeButtonContainer = styled(Box)((() => ({
     height: '6rem'
 })))
 
-export const ContactMeButton = styled(Button)((() => ({
+export const HomeContactButton = styled(Button)((() => ({
     backgroundColor: Colors.purple,
     width: '100%'
 
 
 })))
 
-export const ProjectButton = styled(Button)((() => ({
+export const HomeProjectButton = styled(Button)((() => ({
     backgroundColor: Colors.secondary,
     width: '100%'
 
+})))
+
+//DESKTOP--------------------------------------------------------------------------------------------------------
+//Desktop Left Side
+export const DesktopLeftSide = styled(Grid)((() => ({
+    height: '100vh',
+    marginTop: '8rem',
+    paddingTop: '2rem'
+})))
+
+export const DesktopIntroTopLine = styled(IntroText)((() => ({
+    textAlign: 'center',
+    color: Colors.white,
 })))

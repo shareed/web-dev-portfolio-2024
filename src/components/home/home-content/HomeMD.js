@@ -1,5 +1,17 @@
 import { Grid, Box, Button, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import {
+    DesktopLeftSide,
+    IntroBottomText,
+    IntroNameBottom,
+    IntroNameMiddle,
+    IntroNameTop,
+    IntroText,
+    HomeButtonContainer,
+    HomeContactButton,
+    HomeProjectButton
+} from '../../../styles/home';
+
 
 
 const HomeMD = () => {
@@ -7,62 +19,65 @@ const HomeMD = () => {
         <Grid container >
             {/* LEFT SIDE------------------------------------------------------------------------------------------------------------------------ */}
 
-            <Grid item md={7} sx={{ height: '100vh' }} mt={'8rem'} pt={'2rem'} >
+            <DesktopLeftSide item md={7}>
                 {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
 
-                <Grid container ml={'3rem'} >
-                    <Grid item sx={12} >
-                        <Typography variant='h4' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
-                            Hi I'm MD
-                        </Typography>
-                    </Grid>
+                
+            <Grid container ml={'3rem'} >
+                <Grid item sx={12} >
+                    <IntroText variant='h4'>
+                        Hi I'm MD
+                    </IntroText>
                 </Grid>
-                {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
+                </Grid>
+                
 
-                <Grid container ml={'4rem'}>
-                    <Grid item sx={12}   >
-                        <Typography variant='h3' color={'#50424F'} fontFamily={'"Lemon", serif'} >
-                            Shannon Reed
-                        </Typography>
-                        <Typography variant='h3' mt={'-3.4rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
-                            Shannon Reed
-                        </Typography>
-                        <Typography variant='h3' mt={'-3.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
-                            Shannon Reed
-                        </Typography>
-                    </Grid>
+ {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
+               
+            <Grid container ml={'4rem'}>
+                <Grid item sx={12}   >
+                    <IntroNameBottom variant='h3'>
+                        Shannon Reed
+                    </IntroNameBottom>
+                    <IntroNameMiddle variant='h3'>
+                        Shannon Reed
+                    </IntroNameMiddle>
+                    <IntroNameTop variant='h3' mt={'-3.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
+                        Shannon Reed
+                    </IntroNameTop>
+                </Grid>
                 </Grid>
                 {/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
 
-                <Grid container ml={'4rem'}>
+                <Grid container ml={'4rem'} mb={'2rem'}>
                     <Grid item sx={12}  >
-                        <Typography variant='h5' color={'white'} fontFamily={'"Lemon", serif'} >
+                        <IntroBottomText variant='h5'>
                             Web Developer and Designer
-                        </Typography>
+                        </IntroBottomText>
                     </Grid>
 
                 </Grid>
 {/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
 
-                <Box display={'flex'} flexDirection={'column'} m={'2rem'} ml={'5rem'} mr={'5rem'} >
+                <HomeButtonContainer >
                     <NavLink to={'/contact'}>
-                        <Button id='contact-home-button' sx={{ backgroundColor: 'rgb(179, 10, 179)', mb: '1rem', width: '100%' }}  >
+                        <HomeContactButton id='contact-home-button' >
                             <Typography variant='p'>
                                 Contact Me
                             </Typography>
-                        </Button>
+                        </HomeContactButton>
                     </NavLink>
 
                     <NavLink to={'/projects'}>
-                        <Button id='projects-home-button' sx={{ backgroundColor: '#50424F', width: '100%' }}>
+                        <HomeProjectButton id='projects-home-button'>
                             <Typography variant='p'>
                                 Projects
 
                             </Typography>
-                        </Button>
+                        </HomeProjectButton>
                     </NavLink>
-                </Box>
-            </Grid>
+                </HomeButtonContainer>
+            </DesktopLeftSide>
 {/* RIGHT SIDE------------------------------------------------------------------------------------------------------------------------ */}
 
             <Grid item md={5} sx={{ backgroundColor: '#50424F', height: '80vh' }} mt={'3rem'} pt={'2rem'}>

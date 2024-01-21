@@ -1,21 +1,22 @@
 import { Grid, Box, Button, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import { DesktopLeftSide, IntroNameBottom, IntroNameMiddle, IntroText } from '../../../styles/home';
 
 
 const HomeXL = () => {
     return (
-        <Grid container sx={{}}>
+        <Grid container>
 {/* LEFT SIDE------------------------------------------------------------------------------------------------------------------------ */}
 
-            <Grid item md={7} sx={{ color: 'red', height: '100vh' }} mt={'8rem'} pt={'2rem'}>
+            <DesktopLeftSide item md={7} >
                  
 {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
 
             <Grid container ml={'3rem'} >
                 <Grid item sx={12} >
-                    <Typography variant='h4' textAlign={'center'} color={'white'} fontFamily={'"Lemon", serif'} >
+                    <IntroText variant='h4'>
                         Hi I'm XL
-                    </Typography>
+                    </IntroText>
                 </Grid>
                 </Grid>
                 
@@ -24,12 +25,12 @@ const HomeXL = () => {
                
             <Grid container ml={'4rem'}>
                 <Grid item sx={12}   >
-                    <Typography variant='h2' color={'#50424F'} fontFamily={'"Lemon", serif'} >
+                    <IntroNameBottom variant='h2'>
                         Shannon Reed
-                    </Typography>
-                    <Typography variant='h2' mt={'-4.4rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
+                    </IntroNameBottom>
+                    <IntroNameMiddle variant='h2'>
                         Shannon Reed
-                    </Typography>
+                    </IntroNameMiddle>
                     <Typography variant='h2' mt={'-4.4rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
                         Shannon Reed
                     </Typography>
@@ -63,7 +64,7 @@ const HomeXL = () => {
                     </Button>
                     </NavLink>
                 </Box>
-            </Grid>
+            </DesktopLeftSide>
 
 {/* RIGHT SIDE------------------------------------------------------------------------------------------------------------------------ */}
     

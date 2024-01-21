@@ -1,65 +1,77 @@
 import { Grid, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import { ContactMeButton, HeaderBottomLine, HeaderMiddleLineBottom, HeaderMiddleLineMiddle, HeaderMiddleLineTop, HeaderTopLine, HomeButtonContainer, HomeHeaderContainer, HomeMobileContainer, ProjectButton } from '../../../styles/home';
+import {
+    MobileHomeContainer,
+    MobileIntroContainer,
+    MobileIntroTopLine,
+    HomeContactButton,
+    IntroNameTop,
+    IntroNameMiddle,
+    IntroNameBottom,
+    IntroBottomText,
+    HomeButtonContainer,
+    HomeProjectButton,
+    
+} from '../../../styles/home';
 
 
 
 const HomeMobile = () => {
     return (
-        <HomeMobileContainer >
-            <HomeHeaderContainer>
+        <MobileHomeContainer >
+            <MobileIntroContainer>
                 {/* TOP TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container >
                     <Grid item sx={12} >
-                        <HeaderTopLine variant='h4' >
+                        <MobileIntroTopLine variant='h4' >
                             Hi I'm
-                        </HeaderTopLine>
+                        </MobileIntroTopLine>
                     </Grid>
                 </Grid>
                 {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
-                        <HeaderMiddleLineBottom variant='h3'  >
+                        <IntroNameBottom variant='h3'  >
                             Shannon Reed
-                        </HeaderMiddleLineBottom>
-                        <HeaderMiddleLineMiddle variant='h3'>
+                        </IntroNameBottom>
+                        <IntroNameMiddle variant='h3'>
                             Shannon Reed
-                        </HeaderMiddleLineMiddle>
-                        <HeaderMiddleLineTop variant='h3' >
+                        </IntroNameMiddle>
+                        <IntroNameTop variant='h3' >
                             Shannon Reed
-                        </HeaderMiddleLineTop>
+                        </IntroNameTop>
                     </Grid>
                 </Grid>
                 {/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
-                        <HeaderBottomLine variant='h4'>
+                        <IntroBottomText variant='h4'>
                             Web Developer & Designer
-                        </HeaderBottomLine>
+                        </IntroBottomText>
                     </Grid>
                 </Grid>
-            </HomeHeaderContainer>
+            </MobileIntroContainer>
 
 
             {/* BUTTONS------------------------------------------------------------------------------------------------------------------------ */}
             <HomeButtonContainer >
                 <NavLink to={'/contact'} >
-                    <ContactMeButton id='contact-home-button' >
+                    <HomeContactButton id='contact-home-button' >
                         <Typography variant='p'>
                             Contact Me
                         </Typography>
-                    </ContactMeButton>
+                    </HomeContactButton>
                 </NavLink>
 
                 <NavLink to={'/projects'}>
-                    <ProjectButton id='projects-home-button' >
+                    <HomeProjectButton id='projects-home-button' >
                         <Typography variant='p'>
                             Projects
                         </Typography>
-                    </ProjectButton>
+                    </HomeProjectButton>
                 </NavLink>
             </HomeButtonContainer>
-        </HomeMobileContainer >
+        </MobileHomeContainer >
     )
 }
 
