@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import { HeaderTopLine, HomeMobileContainer } from '../../../styles/home';
+import { HeaderMiddleLineBottom, HeaderMiddleLineMiddle, HeaderMiddleLineTop, HeaderTopLine, HomeMobileContainer } from '../../../styles/home';
 const HomeXS = () => {
     return (
         <HomeMobileContainer >
@@ -16,15 +16,15 @@ const HomeXS = () => {
 {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
-                        <Typography variant='h3' fontSize={'2.9rem'} color={'#50424F'} fontFamily={'"Lemon", serif'} >
+                        <HeaderMiddleLineBottom variant='h3'  >
                             Shannon Reed
-                        </Typography>
-                        <Typography variant='h3' fontSize={'2.9rem'} mt={'-3.3rem'} color={'#B7A6B5'} fontFamily={'"Lemon", serif'} >
+                        </HeaderMiddleLineBottom>
+                        <HeaderMiddleLineMiddle variant='h3'>
                             Shannon Reed
-                        </Typography>
-                        <Typography variant='h3' fontSize={'2.9rem'} mt={'-3.3rem'} color={'#B30AB3'} fontFamily={'"Lemon", serif'} >
+                        </HeaderMiddleLineMiddle>
+                        <HeaderMiddleLineTop variant='h3' >
                             Shannon Reed
-                        </Typography>
+                        </HeaderMiddleLineTop>
                     </Grid>
                 </Grid>
 {/* BOTTOM TEXT ------------------------------------------------------------------------------------------------------------------------ */}

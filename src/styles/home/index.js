@@ -15,3 +15,29 @@ export const HeaderTopLine = styled(Typography)((() => ({
     fontFamily: 'Lemon, serif'
 
 })))
+
+export const HeaderMiddleLineBottom = styled(Typography)((({theme}) => ({
+    color: Colors.secondary,
+    fontFamily: 'Lemon, serif',
+    [theme.breakpoints.only('xs')]: {
+        fontSize: '2.9rem',
+    }
+})))
+
+export const HeaderMiddleLineMiddle = styled(Typography)((({theme}) => ({
+    color: Colors.primary,
+    fontFamily: 'Lemon, serif',
+    marginTop: '-4.4rem',
+    [theme.breakpoints.only('xs')]: {
+        fontSize: '2.9rem',
+        marginTop: '-3.3rem',
+    }
+})))
+
+export const HeaderMiddleLineTop = styled(HeaderMiddleLineMiddle, Typography)((({theme}) => ({
+    color: Colors.purple,
+    [theme.breakpoints.only('sm')]: {
+        marginTop: '-4.3rem',
+    }
+
+})))
