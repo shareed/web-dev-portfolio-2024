@@ -8,7 +8,10 @@ export const IntroText = styled(Typography)((() => ({
     color: Colors.white,
     '@media (max-width: 461px)': {
         fontSize: '1.5rem'
-      }
+    },
+    '@media (max-width: 395px)': {
+        fontSize: '1.3rem'
+    },
     
 })))
 
@@ -19,6 +22,12 @@ export const IntroNameBottom = styled(IntroText)((({theme}) => ({
     color: Colors.secondary,
     '@media (max-width: 461px)': {
         fontSize: '2.5rem'
+    },
+    '@media (max-width: 395px)': {
+        fontSize: '2rem'
+    },
+    '@media (max-width: 328px)': {
+        fontSize: '1.7em',
       }
 })))
 
@@ -32,6 +41,14 @@ export const IntroNameMiddle = styled(IntroText)((({theme}) => ({
     '@media (max-width: 461px)': {
         fontSize: '2.5rem',
         marginTop: '-2.8rem'
+    },
+    '@media (max-width: 395px)': {
+        fontSize: '2rem',
+        marginTop: '-2.2rem'
+    },
+    '@media (max-width: 328px)': {
+        fontSize: '1.7rem',
+        marginTop: '-1.85rem'
       }
 })))
 
@@ -55,7 +72,10 @@ export const HomeButtonContainer = styled(Box)((({theme}) => ({
     height: '6rem',
     [theme.breakpoints.only('xl')]: {
         width: '20%'
-    }
+    },
+    '@media (max-width: 395px)': {
+        width: '40%'
+      }
 })))
 
 export const HomeContactButton = styled(Button)((() => ({
@@ -78,7 +98,11 @@ export const HomeProjectButton = styled(Button)((() => ({
 // Container--------------------
 export const MobileHomeContainer = styled(Box)((() => ({
     height: '100vh',
-    paddingTop: '10rem',
+    // paddingTop: '10rem',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignContent: 'center'
 
 })))
 
