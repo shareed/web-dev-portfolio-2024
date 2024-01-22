@@ -18,7 +18,7 @@ import {
 
 
 
-const HomeMD = () => {
+const HomeDesktop = () => {
     return (
         <Grid container >
             {/* LEFT SIDE------------------------------------------------------------------------------------------------------------------------ */}
@@ -110,4 +110,4 @@ const HomeMD = () => {
     )
 }
 
-export default HomeMD
+export default HomeDesktop
