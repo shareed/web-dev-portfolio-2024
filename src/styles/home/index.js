@@ -20,7 +20,7 @@ export const IntroNameMiddle = styled(IntroText)((({theme}) => ({
     color: Colors.primary,
     marginTop: '-3.4rem',
     [theme.breakpoints.only('xl')]: {
-        marginTop: '-4.4rem'
+        marginTop: '-6.7rem'
     }
 })))
 
