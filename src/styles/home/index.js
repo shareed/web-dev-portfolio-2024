@@ -6,6 +6,10 @@ import { Colors } from "../theme";
 export const IntroText = styled(Typography)((() => ({
     fontFamily: 'Lemon, serif',
     color: Colors.white,
+    '@media (max-width: 461px)': {
+        fontSize: '1.5rem'
+      }
+    
 })))
 
 
@@ -13,6 +17,9 @@ export const IntroText = styled(Typography)((() => ({
 
 export const IntroNameBottom = styled(IntroText)((({theme}) => ({
     color: Colors.secondary,
+    '@media (max-width: 461px)': {
+        fontSize: '2.5rem'
+      }
 })))
 
 
@@ -21,7 +28,11 @@ export const IntroNameMiddle = styled(IntroText)((({theme}) => ({
     marginTop: '-3.4rem',
     [theme.breakpoints.only('xl')]: {
         marginTop: '-6.7rem'
-    }
+    },
+    '@media (max-width: 461px)': {
+        fontSize: '2.5rem',
+        marginTop: '-2.8rem'
+      }
 })))
 
 export const IntroNameTop = styled(IntroNameMiddle, Typography)((({theme}) => ({
@@ -37,13 +48,13 @@ export const IntroBottomText = styled(IntroText)((() => ({
 //Home Buttons------------------------
 export const HomeButtonContainer = styled(Box)((({theme}) => ({
     margin: '0 auto',
-    width: '50%',
+    width: '30%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     height: '6rem',
     [theme.breakpoints.only('xl')]: {
-        width: '30%'
+        width: '20%'
     }
 })))
 
@@ -89,8 +100,10 @@ export const MobileIntroTopLine = styled(IntroText)((() => ({
 //Desktop Left Side----------------------------------
 export const DesktopLeftSide = styled(Grid)((() => ({
     height: '100vh',
-    marginTop: '8rem',
-    paddingTop: '2rem'
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignContent: 'center'
 })))
 
 export const DesktopIntroTopLine = styled(IntroText)((() => ({

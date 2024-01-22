@@ -29,7 +29,7 @@ const HomeDesktopXL = () => {
                 
             <Grid container ml={'3rem'} >
                 <Grid item sx={12} >
-                    <IntroText variant='h2'>
+                    <IntroText variant='h3'>
                         Hi I'm XL
                     </IntroText>
                 </Grid>
@@ -55,7 +55,7 @@ const HomeDesktopXL = () => {
 
                 <Grid container ml={'4rem'} mb={'2rem'}>
                     <Grid item sx={12}  >
-                        <IntroBottomText variant='h2'>
+                        <IntroBottomText variant='h3'>
                             Web Developer and Designer
                         </IntroBottomText>
                     </Grid>

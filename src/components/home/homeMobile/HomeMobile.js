@@ -31,7 +31,7 @@ const HomeMobile = () => {
                 {/* NAME------------------------------------------------------------------------------------------------------------------------ */}
                 <Grid container>
                     <Grid item sx={12}  >
-                        <IntroNameBottom variant='h3'  >
+                        <IntroNameBottom variant='h3'>
                             Shannon Reed
                         </IntroNameBottom>
                         <IntroNameMiddle variant='h3'>
