@@ -35,13 +35,16 @@ export const IntroBottomText = styled(IntroText)((() => ({
 })))
 
 //Home Buttons------------------------
-export const HomeButtonContainer = styled(Box)((() => ({
+export const HomeButtonContainer = styled(Box)((({theme}) => ({
     margin: '0 auto',
     width: '50%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    height: '6rem'
+    height: '6rem',
+    [theme.breakpoints.only('xl')]: {
+        width: '30%'
+    }
 })))
 
 export const HomeContactButton = styled(Button)((() => ({
